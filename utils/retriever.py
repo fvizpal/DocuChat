@@ -1,6 +1,6 @@
 
-from indexer import embed_query, _get_collection   # ← embed_query instead
-from loader import Document
+from utils.indexer import embed_query, _get_collection   # ← embed_query instead
+from utils.loader import Document
 
 
 def retrieve(

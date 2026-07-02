@@ -1,6 +1,6 @@
 
 from sentence_transformers import CrossEncoder
-from loader import Document
+from utils.loader import Document
 
 
 # ---------------------------------------------------------------------------

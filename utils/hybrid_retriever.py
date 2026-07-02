@@ -1,8 +1,8 @@
 
 import math
 from rank_bm25 import BM25Okapi
-from indexer import embed_query, _get_collection
-from loader import Document
+from utils.indexer import embed_query, _get_collection
+from utils.loader import Document
 
 
 # ---------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 import hashlib
 import chromadb
 from sentence_transformers import SentenceTransformer
-from loader import Document
+from utils.loader import Document
 
 
 # ---------------------------------------------------------------------------

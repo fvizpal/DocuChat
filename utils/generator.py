@@ -2,12 +2,12 @@
 import os
 from google import genai
 from google.genai import types
-from loader import Document
+from utils.loader import Document
 # from retriever import retrieve
-from hybrid_retriever import hybrid_retrieve
-from reranker import rerank
+from utils.hybrid_retriever import hybrid_retrieve
+from utils.reranker import rerank
 
-from query_rewriter import rewrite_query, build_search_queries
+from utils.query_rewriter import rewrite_query, build_search_queries
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -90,7 +90,7 @@ ANSWER:"""
 
 # generator.py
 # Add these imports at the top:
-from query_rewriter import rewrite_query, build_search_queries
+from utils.query_rewriter import rewrite_query, build_search_queries
 
 # Replace the entire generate_answer() function with this:
 

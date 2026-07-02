@@ -1,8 +1,8 @@
-# rag_pipeline.py
-from loader import load_document, Document
-from chunker import chunk_documents
-from indexer import index_chunks, clear_index, get_index_stats
-from generator import generate_answer
+
+from utils.loader import load_document, Document
+from utils.chunker import chunk_documents
+from utils.indexer import index_chunks, clear_index, get_index_stats
+from utils.generator import generate_answer
 
 
 class RAGPipeline:

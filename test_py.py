@@ -1,8 +1,8 @@
 # test_full_pipeline.py
-from loader import load_document
-from chunker import chunk_documents
-from indexer import index_chunks, clear_index
-from generator import generate_answer
+from utils.loader import load_document
+from utils.chunker import chunk_documents
+from utils.indexer import index_chunks, clear_index
+from utils.generator import generate_answer
 
 clear_index()
 docs = load_document(

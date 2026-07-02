@@ -1,6 +1,6 @@
-# app.py
+
 import streamlit as st
-from rag_pipeline import RAGPipeline
+from utils.rag_pipeline import RAGPipeline
 import tempfile
 import os
 
@@ -118,7 +118,7 @@ with st.sidebar:
 
         # Clear button
         if st.button("🗑️ Clear & Load New", use_container_width=True):
-            from indexer import clear_index
+            from utils.indexer import clear_index
             clear_index()
             pipeline.is_ready = False
             st.session_state.doc_loaded = False

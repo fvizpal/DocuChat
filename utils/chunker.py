@@ -1,6 +1,6 @@
 # chunker.py
 # from langchain.text_splitter import RecursiveCharacterTextSplitter
-from loader import Document
+from utils.loader import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
