@@ -88,12 +88,6 @@ ANSWER:"""
 
     return prompt
 
-# generator.py
-# Add these imports at the top:
-from utils.query_rewriter import rewrite_query, build_search_queries
-
-# Replace the entire generate_answer() function with this:
-
 def generate_answer(
     query: str,
     top_k: int = 5,
