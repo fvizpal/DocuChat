@@ -62,14 +62,3 @@ streamlit run app.py
 ```
 
 Open the URL printed in the terminal (default: `http://localhost:8501`). Upload a PDF or paste a URL in the sidebar, then start asking questions.
-
-## Project structure notes
-
-The project currently lacks a few standard conventions that would improve maintainability:
-
-- **`requirements.txt`** — dependencies are not pinned; users must install manually from their venv
-- **Package layout** — source files live in `utils/` without `__init__.py` files; a proper `src/docuchat/` package with `pyproject.toml` would enable `pip install -e .`
-- **Tests** — `test_*.py` files sit at the project root; a `tests/` directory is conventional
-- **Configuration** — settings are spread across modules (model names, chunk sizes, paths); a central config class or YAML file would be cleaner
-
-These are incremental improvements, not blockers — the code works as-is.
